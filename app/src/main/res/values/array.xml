@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provider">
+        <item >Passive</item>
+        <item >GPS</item>
+        <item >Network</item>
+    </string-array>
+</resources>

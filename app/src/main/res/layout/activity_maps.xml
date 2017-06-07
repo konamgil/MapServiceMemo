@@ -1,0 +1,64 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:text="위치제공자를 선택하세요"
+                />
+            <TextView
+                android:id="@+id/providers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:text="위치제공자를 선택하세요"
+                />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center_vertical"
+
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_weight="11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.namgil.map.mapservicememo.MapsActivity" />
+    </FrameLayout>
+
+</LinearLayout>
